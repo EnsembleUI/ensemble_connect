@@ -255,8 +255,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: plaid-integration
-      resolved-ref: d167a0b78a5250405ae11b0bbf323fb464cdce1c
+      ref: main
+      resolved-ref: "8792982d8bc0846d4295badd0633401994ed9bad"
       url: "https://github.com/EnsembleUI/ensemble.git"
     source: git
     version: "1.0.0+5"
