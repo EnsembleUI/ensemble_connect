@@ -1,8 +1,5 @@
+import 'package:ensemble/widget/plaid_link/plaid_link_controller.dart';
 import 'package:plaid_flutter/plaid_flutter.dart';
-
-typedef PlaidLinkSuccessCallback = void Function(LinkSuccess);
-typedef PlaidLinkEventCallback = void Function(LinkEvent);
-typedef PlaidLinkErrorCallback = void Function(LinkExit);
 
 class PlaidLinkService {
   static final PlaidLinkService _instance = PlaidLinkService._internal();
@@ -17,13 +14,13 @@ class PlaidLinkService {
     // Subscribe to all events
 
     PlaidLink.onSuccess.listen((successData) {
-      onSuccess(successData);
+      onSuccess(successData.toJson());
     });
     PlaidLink.onEvent.listen((eventData) {
-      onEvent(eventData);
+      onEvent(eventData.toJson());
     });
     PlaidLink.onExit.listen((exitData) {
-      onExit(exitData);
+      onExit(exitData.toJson());
     });
 
     PlaidLink.open(configuration: LinkTokenConfiguration(token: plaidLink));
