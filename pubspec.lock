@@ -256,7 +256,7 @@ packages:
     description:
       path: "."
       ref: plaid-integration
-      resolved-ref: e6eead215722384ad76cb2520a3a49b2077fd822
+      resolved-ref: d167a0b78a5250405ae11b0bbf323fb464cdce1c
       url: "https://github.com/EnsembleUI/ensemble.git"
     source: git
     version: "1.0.0+5"

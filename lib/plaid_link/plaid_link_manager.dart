@@ -1,14 +1,8 @@
-import 'package:ensemble/widget/plaid_link/plaid_link_controller.dart';
+import 'package:ensemble/framework/stub/plaid_link_manager.dart';
 import 'package:plaid_flutter/plaid_flutter.dart';
 
-class PlaidLinkService {
-  static final PlaidLinkService _instance = PlaidLinkService._internal();
-  PlaidLinkService._internal();
-
-  factory PlaidLinkService() {
-    return _instance;
-  }
-
+class PlaidLinkManagerImpl extends PlaidLinkManager {
+  @override
   void openPlaidLink(String plaidLink, PlaidLinkSuccessCallback onSuccess,
       PlaidLinkEventCallback onEvent, PlaidLinkErrorCallback onExit) {
     // Subscribe to all events
