@@ -4,11 +4,11 @@ typedef PlaidLinkSuccessCallback = void Function(LinkSuccess);
 typedef PlaidLinkEventCallback = void Function(LinkEvent);
 typedef PlaidLinkErrorCallback = void Function(LinkExit);
 
-class PlaidLinkController {
-  static final PlaidLinkController _instance = PlaidLinkController._internal();
-  PlaidLinkController._internal();
+class PlaidLinkService {
+  static final PlaidLinkService _instance = PlaidLinkService._internal();
+  PlaidLinkService._internal();
 
-  factory PlaidLinkController() {
+  factory PlaidLinkService() {
     return _instance;
   }
 

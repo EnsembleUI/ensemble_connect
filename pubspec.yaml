@@ -10,6 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  ensemble:
+    git:
+      url: https://github.com/EnsembleUI/ensemble.git
+      ref: plaid-integration
   plaid_flutter: ^3.1.2
 
 dev_dependencies:
